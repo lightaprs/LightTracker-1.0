@@ -18,7 +18,6 @@ LightTracker will be available on https://shop.qrp-labs.com/ for order soon.
 - **CPU** : ATSAMD21G18
 - **Flash** : 256 kB
 - **Ram** : 32 kB
-- **EEPROM** : 4 kB
 - **Operating Frequency** : 48 Mhz
 - **Operating Voltage** : 3.3 Volt
 - **Input Voltage** : 2.7 (min) - 16 (max) Volt via usb or VBat pin
