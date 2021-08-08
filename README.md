@@ -38,5 +38,6 @@ LightTracker will be available on https://shop.qrp-labs.com/ for order soon. If 
 
 ## Wiki
 
-We'll share more information (sample codes, guides, FAQs, etc.) soon.
+We'll share more information (sample codes, guides,  etc.) soon.
 
+- **[F.A.Q.](https://github.com/lightaprs/LightTracker-1.0/wiki/F.A.Q.)**
