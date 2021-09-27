@@ -40,4 +40,13 @@ LightTracker will be available on https://shop.qrp-labs.com/ for order soon. If 
 
 We'll share more information (sample codes, guides,  etc.) soon.
 
-- **[F.A.Q.](https://github.com/lightaprs/LightTracker-1.0/wiki/F.A.Q.)**
+### General
+
+* **[F.A.Q.](https://github.com/lightaprs/LightTracker-1.0/wiki/F.A.Q.)**
+
+### LoRaWAN
+
+* **[Adding Device on Helium Console](https://github.com/lightaprs/LightTracker-1.0/wiki/Adding-Device-on-Helium-Console)**
+* **[Cayenne myDevices Integration with Helium Console](https://github.com/lightaprs/LightTracker-1.0/wiki/Cayenne-myDevices-Integration-with-Helium-Console)**
+* **[Adding Helium Device on Cayenne myDevices](https://github.com/lightaprs/LightTracker-1.0/wiki/Adding-Helium-Device-on-Cayenne-myDevices)**
+* **[How to Customize Cayenne Dashboard](https://github.com/lightaprs/LightTracker-1.0/wiki/How-to-Customize-Cayenne-Dashboard)**
