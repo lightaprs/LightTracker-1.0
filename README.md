@@ -99,6 +99,7 @@ We'll share more information (sample codes, guides,  etc.) soon.
 * **[F.A.Q.](https://github.com/lightaprs/LightTracker-1.0/wiki/F.A.Q.)**
 * **[Antenna Guide](https://github.com/lightaprs/LightTracker-1.0/wiki/Antenna-Guide)**
 * **[Tips & Tricks for Pico Balloons](https://github.com/lightaprs/LightTracker-1.0/wiki/Tips-&-Tricks-for-Pico-Balloons)**
+* **[Supported Protocols and Digital Modes](https://github.com/lightaprs/LightTracker-1.0/wiki/Supported-Protocols-and-Digital-Modes)**
 
 ### LoRaWAN
 
