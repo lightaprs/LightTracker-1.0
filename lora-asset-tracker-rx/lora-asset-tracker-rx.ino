@@ -556,7 +556,7 @@ float readBatt() {
     value = value / 3.0f;
     value = (value * 3.3) / 1024.0f;
     value = value / (R2/(R1+R2));
-  } while (value > 10.0);
+  } while (value > 20.0);
   return value ;
 
 }

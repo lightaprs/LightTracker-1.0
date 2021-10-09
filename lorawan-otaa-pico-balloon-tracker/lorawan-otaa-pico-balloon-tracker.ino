@@ -25,6 +25,8 @@ LIS3DH myIMU; //accelerometer
 
 //#define DEVMODE // Development mode. Uncomment to enable for debugging.
 
+uint8_t measurementSystem = 0; //0 for metric (meters, km, Celcius, etc.), 1 for imperial (feet, mile, Fahrenheit,etc.) 
+
 //***************************** UPDATE HERE WITH YOUR DEVICE KEYS **************************************/
 
 //You should copy device keys from Helium or TTN Console and update following keys. Please check out: https://github.com/lightaprs/LightTracker-1.0/wiki/Adding-Device-on-Helium-Console
@@ -48,7 +50,6 @@ static const u1_t PROGMEM APPKEY[16] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 
 //************************** LoRaWAN Settings ********************
 const unsigned TX_INTERVAL = 60000;  // Schedule TX every this many miliseconds (might become longer due to duty cycle limitations).
-uint8_t measurementSystem = 0; //0 for metric (meters, km, Celcius, etc.), 1 for imperial (feet, mile, Fahrenheit,etc.) 
 
 //try to keep telemetry size smaller than 51 bytes if possible. Default telemetry size is 45 bytes.
 CayenneLPP telemetry(51);
@@ -587,7 +588,7 @@ float readBatt() {
     value = value / 3.0f;
     value = (value * 3.3) / 1024.0f;
     value = value / (R2/(R1+R2));
-  } while (value > 16.0);
+  } while (value > 20.0);
   return value ;
 
 }
