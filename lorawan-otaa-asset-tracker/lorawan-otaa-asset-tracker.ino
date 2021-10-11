@@ -21,6 +21,7 @@
 SFE_UBLOX_GPS myGPS;
 Adafruit_BMP085 bmp; //temp and pressure sensor
 LIS3DH myIMU; //accelerometer
+#define SSD1306_WHITE 1   ///< Draw 'on' pixels
 
 //#define DEVMODE // Development mode. Uncomment to enable for debugging.
 

@@ -21,6 +21,7 @@ SX1262 lora = new Module(8, 3, 9, 2);
 SFE_UBLOX_GPS myGPS;
 Adafruit_BMP085 bmp;
 LIS3DH myIMU; //Default constructor is I2C, addr 0x19.
+#define SSD1306_WHITE 1   ///< Draw 'on' pixels
 
 //#define DEVMODE // Development mode. Uncomment to enable for debugging.
 
