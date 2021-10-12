@@ -9,7 +9,9 @@ LightTracker is available on https://shop.qrp-labs.com/lighttracker for order.
 <img src="images/lighttracker-b-pinout.png" width="600">
 
 **Important :** LightTracker uses unlicensed ISM radio bands which does not require any license to operate. So everone can use LoRa & LoRaWAN modules.
- 
+
+![image](https://user-images.githubusercontent.com/48382675/135754148-8be7a6b1-d783-4bde-aaed-d4e67c7b3fe4.png)
+
 ## Basic Features
 
 - **Software** : Open Source
