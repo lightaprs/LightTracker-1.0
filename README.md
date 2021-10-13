@@ -92,6 +92,10 @@ You are almost ready to programme LightTracker :)
 - Click **Upload**
 - Your tracker is ready to launch :)
 
+## Support
+
+If you have any questions or need supoort, please contact support@lightaprs.com
+
 ## Wiki
 
 ### General
