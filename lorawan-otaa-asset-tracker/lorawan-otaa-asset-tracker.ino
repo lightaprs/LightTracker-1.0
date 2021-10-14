@@ -58,7 +58,7 @@ uint8_t Lorawan_region_code = REGCODE_EU868;//For EU
 //uint8_t Lorawan_region_code = REGCODE_IN865;//For India and Pakistan
 
 const unsigned TX_INTERVAL = 60000;  // Schedule TX every this many miliseconds (might become longer due to duty cycle limitations).
-boolean gpsFixRequiredforTX = false; //By default GPS fix required for telemetry TX (but not required for OTAA join)
+boolean gpsFixRequiredforTX = true; //By default GPS fix required for telemetry TX (but not required for OTAA join)
 
 //Spreading Factor automatically selected by BasicMAC LoRaWAN Library. Keep this "true" if you want to use your tracker in urban areas.
 //But if you are too far from the the gateways/hotspots then change it to "false"
