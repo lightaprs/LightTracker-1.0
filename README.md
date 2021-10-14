@@ -1,14 +1,14 @@
 # LightTracker
 
-LightTracker is one of the most affordable, smallest, lightest, powerful and open source LoRa and LoRaWAN trackers available. It makes tracking pico balloons, weather balloons, model rockets, RC aircraft, and anything else that flies simple and easy. 
-It is able to report location, altitude, temperature and pressure to the internet (LoRaWAN networks such as Helium and TTN) or direct to another LoRa radio module with a solar panel/super capacitors or just 3xAAA batteries. 
+LightTracker is one of the most affordable, smallest, lightest, powerful and open source LoRa and LoRaWAN trackers available. It makes tracking pico balloons, weather balloons, model rockets, RC aircraft, and anything else that flies simple and easy.
+It is able to report location, altitude, temperature and pressure to the internet (LoRaWAN networks such as Helium and TTN) or direct to another LoRa radio module with a solar panel/super capacitors or just 3xAAA batteries.
 Because LightTracker is open source you can add your own custom sensors via I2C pins.
 
 LightTracker is available on https://shop.qrp-labs.com/lighttracker for order.
 
 <img src="images/lighttracker-b-pinout.png" width="600">
 
-**Important :** LightTracker uses unlicensed ISM radio bands which does not require any license to operate. So everone can use LoRa & LoRaWAN modules.
+**Important :** LightTracker uses unlicensed ISM radio bands which does not require any license to operate. So everyone can use LoRa & LoRaWAN modules.
 
 ![image](https://user-images.githubusercontent.com/48382675/135754148-8be7a6b1-d783-4bde-aaed-d4e67c7b3fe4.png)
 
@@ -62,30 +62,30 @@ Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software). If 
 
 ![image](https://user-images.githubusercontent.com/48382675/135892579-8fb214f0-07ad-485d-9aba-d51d7acf9a16.png)
 
-### 3.Copy Libraries & Compile Source Code 
+### 3.Copy Libraries & Compile Source Code
 
 You are almost ready to programme LightTracker :)
 
-- First download the repository to your computer using green "[Code -> Download ZIP](https://github.com/lightaprs/LightTracker-1.0/archive/refs/heads/main.zip)" button and extract it.
-- You will see more then one Arduino projects optimized for different use cases. For example if you are planning to use LightTracker for a pico balloon project, then use "[lorawan-otaa-pico-balloon-tracker](lorawan-otaa-pico-balloon-tracker)" folder or if you want to track your assets, vehicles, etc. then use "[lorawan-otaa-asset-tracker](lorawan-otaa-asset-tracker)" folder.
+- First download the repository to your computer using the green "[Code -> Download ZIP](https://github.com/lightaprs/LightTracker-1.0/archive/refs/heads/main.zip)" button and extract it.
+- You will see more than one Arduino project optimized for different use cases. For example if you are planning to use LightTracker for a pico balloon project, then use "[lorawan-otaa-pico-balloon-tracker](lorawan-otaa-pico-balloon-tracker)" folder or if you want to track your assets, vehicles, etc. then use "[lorawan-otaa-asset-tracker](lorawan-otaa-asset-tracker)" folder.
 - You will also notice some folders in the "libraries" folder. You have to copy these folders (libraries) into your Arduino libraries folder on your computer. Path to your Arduino libraries:
 
   **Windows** : This PC\Documents\Arduino\libraries\
-  
+ 
   **Mac** : /Users/\<username\>/Documents/Arduino/libraries/
 
 - Copy all of them into your Arduino libraries folder as follows:
 
 ![image](https://user-images.githubusercontent.com/48382675/135894729-d4075114-4c57-49d9-9bb7-5277bd3c1e66.png)
 
-- Then open the regarding sketch file (*.ino) with Arduino IDE and change your settings as described in Wiki pages and save it.
-- Click **Verify** 
+- Then open the relevant sketch file (*.ino) with Arduino IDE and change your settings as described in Wiki pages and save it.
+- Click **Verify**
 
 ### 4.Upload
 
-- First attach an antenna to your tracker as if described in [Antenna Guide](https://github.com/lightaprs/LightTracker-1.0/wiki/Antenna-Guide) LoRa radio module may be damaged if operated without attaching an antenna, since power has nowhere to go. 
-- Connect LightTracker to your computer with micro USB cable. 
-- IYou should see a COM port under **Tools->Port** menu item. Select that port. 
+- First attach an antenna to your tracker as if described in [Antenna Guide](https://github.com/lightaprs/LightTracker-1.0/wiki/Antenna-Guide) LoRa radio module may be damaged if operated without attaching an antenna, since power has nowhere to go.
+- Connect LightTracker to your computer with a micro USB cable.
+- IYou should see a COM port under **Tools->Port** menu item. Select that port.
 
 ![image](https://user-images.githubusercontent.com/48382675/135892815-b129bd92-1d88-41e3-a943-dd61bd19f3e9.png)
 
@@ -94,7 +94,7 @@ You are almost ready to programme LightTracker :)
 
 ## Support
 
-If you have any questions or need supoort, please contact support@lightaprs.com
+If you have any questions or need support, please contact support@lightaprs.com
 
 ## Wiki
 
