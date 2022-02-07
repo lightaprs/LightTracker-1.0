@@ -703,6 +703,7 @@ void setupUBloxDynamicModel() {
     }
     else
     {
+      ublox_high_alt_mode_enabled = true;
       #if defined(DEVMODE)
         SerialUSB.print(F("Dynamic platform model changed successfully! : "));
         SerialUSB.println(myGPS.getDynamicModel());
