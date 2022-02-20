@@ -25,6 +25,6 @@ function Decoder(bytes, port) {
 		latitude  : Bytes2Float32(latitude),
 		longitude : Bytes2Float32(longitude),
 		altitude  : Math.round(Bytes2Float32(altitude)),
-		accuracy  : Bytes2Float32(altitude),
+		accuracy  : Bytes2Float32(accuracy),
 	};
 }
