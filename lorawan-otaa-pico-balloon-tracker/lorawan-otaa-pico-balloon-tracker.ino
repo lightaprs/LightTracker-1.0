@@ -245,7 +245,7 @@ void startJoining() {
       if(Lorawan_Geofence_special_region_code == _REGCODE_RU864) {
         SerialUSB.println(F("Special Region RU864"));
         LMIC_setupChannel(0, 868900000, DR_RANGE_MAP(0, 2));
-        LMIC_setupChannel(0, 869100000, DR_RANGE_MAP(0, 2));      
+        LMIC_setupChannel(1, 869100000, DR_RANGE_MAP(0, 2));      
       } 
        //DR2 (SF10 BW125kHz)
        //SF10 is better/optimum spreading factor for high altitude balloons
@@ -259,8 +259,8 @@ void startJoining() {
       if(Lorawan_Geofence_special_region_code == _REGCODE_KR920) {
         SerialUSB.println(F("Special Region KR920"));        
         LMIC_setupChannel(0, 922100000, DR_RANGE_MAP(0, 2));
-        LMIC_setupChannel(0, 922300000, DR_RANGE_MAP(0, 2));
-        LMIC_setupChannel(0, 922500000, DR_RANGE_MAP(0, 2));
+        LMIC_setupChannel(1, 922300000, DR_RANGE_MAP(0, 2));
+        LMIC_setupChannel(2, 922500000, DR_RANGE_MAP(0, 2));
       }
            
        //DR2 (SF10 BW125kHz)
