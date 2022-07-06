@@ -52,7 +52,7 @@ static const u1_t PROGMEM APPKEY[16] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 const unsigned TX_INTERVAL = 60000;  // Schedule TX every this many miliseconds (might become longer due to duty cycle limitations).
 
 //try to keep telemetry size smaller than 51 bytes if possible. Default telemetry size is 45 bytes.
-CayenneLPP telemetry(51);
+CayenneLPP telemetry(45);
 
 // The LoRaWAN region to use, automatically selected based on your location. So GPS fix is necesarry
 u1_t os_getRegion (void) { return Lorawan_Geofence_region_code; } //do not change this
@@ -93,6 +93,7 @@ float gpsMinVolt=4.5; //min Volts for GPS to wake up. (important if power source
 //********************************* Misc Settings ******************************
 int txCount = 1;
 float voltage = 0;
+boolean packetQueued = false;
 
 void setup() {
   
@@ -146,7 +147,7 @@ if (((voltage > battMin) && gpsFix) || ((voltage > gpsMinVolt) && !gpsFix)) {
   // If TX_INTERVAL passed, *and* our previous packet is not still
   // pending (which can happen due to duty cycle limitations), send
   // the next packet.
-  if ((millis() - last_packet > TX_INTERVAL && !(LMIC.opmode & (OP_JOINING|OP_TXRXPEND))) || !gpsFix){
+  if ((!packetQueued && (millis() - last_packet > TX_INTERVAL) && !(LMIC.opmode & (OP_JOINING|OP_TXRXPEND))) || !gpsFix){
   
     GpsON;
     delay(500);
@@ -157,7 +158,7 @@ if (((voltage > battMin) && gpsFix) || ((voltage > gpsMinVolt) && !gpsFix)) {
 
      // Calling myGPS.getPVT() returns true if there actually is a fresh navigation solution available.
 
-    if (myGPS.getPVT() && (myGPS.getFixType() !=0) && (myGPS.getSIV() > 0)) {
+    if (myGPS.getPVT() && (myGPS.getFixType() !=0) && (myGPS.getSIV() > 3)) {
       gpsFix=true;     
       
       checkRegionByLocation();
@@ -407,6 +408,7 @@ void sendLoRaWANPacket(){
     LMIC_setTxData2(1, telemetry.getBuffer(), telemetry.getSize(), 0);
     last_packet = millis();
     txCount++;
+    packetQueued = true;
     SerialUSB.print(F("Packet queued..."));
   
   }
@@ -642,6 +644,7 @@ void onLmicEvent (ev_t ev) {
             break;
         case EV_TXCOMPLETE:
             SerialUSB.println(F("EV_TXCOMPLETE (includes waiting for RX windows)"));
+            packetQueued = false;
             if (LMIC.txrxFlags & TXRX_ACK)
               SerialUSB.println(F("Received ack"));
             if (LMIC.dataLen) {
