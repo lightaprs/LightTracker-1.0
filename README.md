@@ -4,7 +4,11 @@ LightTracker is one of the most affordable, smallest, lightest, powerful and ope
 It is able to report location, altitude, temperature and pressure to the internet (LoRaWAN networks such as Helium and TTN) or direct to another LoRa radio module with a solar panel/super capacitors or just 3xAAA batteries.
 Because LightTracker is open source you can add your own custom sensors via I2C pins.
 
-LightTracker is available on https://shop.qrp-labs.com/lighttracker for order.
+LightTracker is available on https://shop.qrp-labs.com/lighttracker for order. If you need an APRS+WSPR tracker than checkout:
+
+**LightAPRS-W 2.0:** https://github.com/lightaprs/LightAPRS-W-2.0 (New)
+
+**LightAPRS Tracker:** https://github.com/lightaprs/LightAPRS-1.0
 
 <img src="images/lighttracker-b-pinout.png" width="600">
 
