@@ -1,3 +1,5 @@
+**Retired Product:** This product has been retired from our catalog and is no longer for sale. Check out [LighTracker 1.1](https://github.com/lightaprs/LightTracker-1.1)
+
 # LightTracker
 
 LightTracker is one of the most affordable, smallest, lightest, powerful and open source LoRa and LoRaWAN trackers available. It makes tracking pico balloons, weather balloons, model rockets, RC aircraft, and anything else that flies simple and easy.
