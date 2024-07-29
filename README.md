@@ -6,9 +6,11 @@ Because LightTracker is open source you can add your own custom sensors via I2C 
 
 LightTracker is available on https://shop.qrp-labs.com/lighttracker for order. If you need an 2m VHF APRS or LoRa APRS (433MHz) tracker than checkout:
 
-**LightTracker (LoRa APRS) Plus 1.0:** https://github.com/lightaprs/LightTracker-Plus-1.0/
+**LightTracker (LoRa APRS) 1.1 - 433MHz:** https://github.com/lightaprs/LightTracker-1.1-433
 
-**LightAPRS Tracker:** https://github.com/lightaprs/LightAPRS-1.0
+**LightTracker (LoRa APRS) Plus 1.0 - 433MHz:** https://github.com/lightaprs/LightTracker-Plus-1.0/
+
+**LightAPRS Tracker - 144 MHz:** https://github.com/lightaprs/LightAPRS-1.0
 
 <img src="images/lighttracker-b-pinout.png" width="600">
 
